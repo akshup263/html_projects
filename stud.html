@@ -1,0 +1,58 @@
+<!-- Employee form Design -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD OPERATIONS Example
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>Student Login</center></h1>
+	<hr>
+			<div class="student-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Roll no</label>
+                        <input type="text" name="rollno" id="rollno">
+                    </div>
+                    <div>
+                        <label>Total</label>
+                        <input type="text" name="total" id="total">
+                    </div>
+                    <div>
+                        <label>Percent</label>
+                        <input type="text" name="percent" id="percent">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "student-table">
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Roll no</th>
+                            <th>Total</th>
+                            <th>Percent</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="stud.js"></script>
+</body>
+</html>
